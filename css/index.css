@@ -1,0 +1,12 @@
+/* index */
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-bar {
+    flex-direction: row;
+    text-align: right;
+    color: black;
+}
+
