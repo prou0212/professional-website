@@ -1,0 +1,51 @@
+/* index */
+
+* {
+    /* Added Roboto font for better readability */
+    font-family: 'Roboto', sans-serif; 
+}
+
+.nav-bar .nav-container {
+    /* Background of the header and transperency*/
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); 
+    flex-direction: row;
+    text-align: right;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    /* Move flex items to the right */
+    justify-content: flex-end; 
+    /* Center items vertically */
+    align-items: center; 
+    /* Position over other content */
+    position: fixed; 
+    top: 0; /* Stick to top of viewport */
+    left: 0; /* Align to left edge */
+    z-index: 1000; /* Ensure it appears above video */
+    padding-right: 20px; /* Add some padding from right edge */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center; /* Changed from 'right' to 'center' */
+    justify-content: center;
+    border: brown solid 1px;
+    background-color: black; /* Added missing semicolon */
+    color: red;
+    text-decoration: none;
+    padding: 5px 10px; /* Reduced vertical padding from 10px to 5px */
+}
+
+.nav-bar .nav-container a {
+    margin: 0 10px; /* Added margin for spacing between links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 5px; /* Reduced from 10px to 5px */
+    margin-bottom: 5px; /* Reduced from 10px to 5px */
+    width: auto; /* Changed from '100%' to 'auto' for better responsiveness */
+    height: 30px; /* Set a specific height instead of auto */
+    flex-shrink: 0; /* Prevent flex items from shrinking */
+}
