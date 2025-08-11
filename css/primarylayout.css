@@ -10,13 +10,13 @@ main {
   padding-top: 100px;     /* Prevents overlap with nav bar */
 }
 
-
+/*
 .mozilla-headline {
   color: aliceblue;
   font-family: "Mozilla Headline", sans-serif;
   font-weight: 400;
 }
-
+*/
 
 .nav-bar .nav-container {
     /* Background of the header and transperency*/
@@ -49,6 +49,8 @@ main {
 }
 
 .nav-bar .nav-container a {
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
     margin: 0 10px; /* Added margin for spacing between links */
     display: flex;
     align-items: center;
@@ -61,9 +63,40 @@ main {
     flex-shrink: 0; /* Prevent flex items from shrinking */
 }
 
-@media screen and (max-width: 500px) {
-    .nav-link {
+.logo img {
+  padding: 10px; /* Add padding around the image */
+  position: relative; /* Position relative to its container */
+  height: 80px; /* Set a specific height for the logo */
+  width: auto; /* Maintain aspect ratio */
+  z-index: 1001; /* Ensure the logo is above other content */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-right: auto; /* Push logo to the left */
+  z-index: 1001; /* Ensure the logo is above other content */
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 825px) {
+
+  .logo img {
+    display: flex;
+    flex-direction: column; /* Stack logo vertically on small screens */
+    justify-content: center; /* Center logo on smaller screens */
+    align-items: center; /* Center logo on smaller screens */
+      height: 80px; /* Reduce logo size on smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+
+  }
+    .nav-bar .nav-container {
+      display: flex;
       flex-direction: column; /* Stack links vertically on small screens */
       padding: 5px; /* Adjust padding for smaller screens */
+      justify-content: center; /* Center links */
+      align-items: center; /* Center links */
+      height: auto; /* Allow height to adjust based on content */
     }
 }
