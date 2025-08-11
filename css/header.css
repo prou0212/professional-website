@@ -1,14 +1,22 @@
-/* index */
-
-/* Header CSS for the professional website */
+/* Your existing desktop styles */
 .mozilla-headline {
   color: aliceblue;
   font-family: "Mozilla Headline", sans-serif;
   font-weight: 400;
 }
 
+/* Add margin-top to body or main to account for fixed header */
+body {
+  margin: 0;
+  padding-top: 120px; /* Same as header height */
+}
+
+/* Alternative: you can also add it to main instead of body */
+main {
+  margin-top: 120px; /* Push main content below fixed header */
+}
+
 .nav-bar .nav-container {
-    /* Background of the header and transperency*/
     color: white;
     background-color: rgba(0, 0, 0, 0.7); 
     flex-direction: row;
@@ -16,106 +24,117 @@
     height: 120px;
     width: 100%;
     display: flex;
-    /* Move flex items to the right */
-    justify-content: flex-end; 
-    /* Center items vertically */
+    justify-content: space-between; /* Changed from flex-end to space-between */
     align-items: center; 
-    /* Position over other content */
     position: fixed; 
-    top: 0; /* Stick to top of viewport */
-    left: 0; /* Align to left edge */
-    z-index: 1000; /* Ensure it appears above video */
-    padding-right: 20px; /* Add some padding from right edge */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px; /* Changed from padding-right to padding on both sides */
 }
 
 .nav-link {
     display: flex;
-    align-items: center; /* Changed from 'right' to 'center' */
+    align-items: center;
     justify-content: center;
     color: darkblue;
     text-decoration: none;
-    padding: 5px 10px; /* Reduced vertical padding from 10px to 5px */
+    padding: 5px 10px;
     gap: 20px;
 }
 
 .nav-link a {
     font-family: Montserrat, sans-serif;
     font-style: bold;
-    margin: 0 10px 10px 10px; /* Added margin for spacing between links */
+    margin: 0 10px 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     margin: 5px 5px 5px 5px;
-    width: auto; /* Allow width to adjust based on content */
+    width: auto;
     height: 30px;
     flex-shrink: 0;
 }
 
 .logo img {
-  padding: 10px; /* Add padding around the image */
-  position: relative; /* Position relative to its container */
-  height: 80px; /* Set a specific height for the logo */
-  width: auto; /* Maintain aspect ratio */
-  z-index: 1001; /* Ensure the logo is above other content */
+  padding: 10px;
+  position: relative;
+  height: 80px;
+  width: auto;
+  z-index: 1001;
 }
 
 .logo {
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  margin-right: auto; /* Push logo to the left */
-  z-index: 1001; /* Ensure the logo is above other content */
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
   padding: 30px 30px;
 }
 
+/* CORRECTED MOBILE STYLES */
 @media screen and (max-width: 826px) {
 
-  /* Fix the nav container first - this is the flex parent */
-  .nav-bar .nav-container {
-    display: flex;
-    flex-direction: column; /* Stack links vertically on small screens */
-    padding: 5px; /* Adjust padding for smaller screens */
-    align-items: center; /* Center links */
-    height: auto; /* Allow height to adjust based on content */
+  /* Adjust body/main padding for mobile header height */
+  body {
+    padding-top: 200px; /* Increased for mobile header height */
   }
   
-  /* Then style the logo - this is a flex child */
-  .logo {
-    padding: 10px 10px;
+  main {
+    margin-top: 200px; /* Adjust for mobile header height */
+  }
+
+  /* Fix the nav container */
+  .nav-bar .nav-container {
     display: flex;
-    justify-content: center; /* Force center the logo content */
-    align-items: center; /* Force center the logo content */
-    width: 100%; /* Take full width to center properly */
-    text-align: center; /* Additional centering */
+    flex-direction: column;
+    justify-content: flex-start; /* Start from top */
+    align-items: center;
+    height: auto;
+    min-height: 180px; /* Set minimum height for mobile */
+    padding: 10px;
+    gap: 15px; /* Add space between logo and nav */
+  }
+  
+  /* Style the logo */
+  .logo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    order: 1; /* Logo appears first */
   }
   
   .logo img {
     display: block;
-    height: 100px; /* Reduce logo size on smaller screens */
-    width: auto; /* Maintain aspect ratio */
-    flex-shrink: 1; /* Allow shrinking to fit */
     height: clamp(60px, 10vw, 100px);
+    width: auto;
+    flex-shrink: 1;
   }
 
-  /* Style the navigation links container */
-  .nav-bar .nav-container nav {
+  /* Style the navigation links container - CORRECTED SELECTOR */
+  .nav-bar .nav-container .nav-link {
     display: flex;
     flex-direction: column; /* Stack nav links vertically */
-    align-items: center; /* Center the nav links */
-    gap: 10px; /* Space between individual nav links */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    order: 2; /* Nav appears second */
   }
   
   /* Style individual navigation links */
-  .nav-bar .nav-container .nav-link {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center; /* Center text in links */
-    width: 100%; /* Full width for easier tapping */
-    padding: 8px 15px; /* Add padding for better touch targets */
-  }
-
   .nav-bar .nav-container .nav-link a {
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto; /* Changed from 100% to auto */
+    padding: 8px 15px;
+    margin: 5px 0;
+    gap: 8px; /* Space between icon and text */
   }
 }
