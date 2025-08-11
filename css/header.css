@@ -1,5 +1,12 @@
 /* index */
 
+/* Header CSS for the professional website */
+.mozilla-headline {
+  color: aliceblue;
+  font-family: "Mozilla Headline", sans-serif;
+  font-weight: 400;
+}
+
 .nav-bar .nav-container {
     /* Background of the header and transperency*/
     color: white;
