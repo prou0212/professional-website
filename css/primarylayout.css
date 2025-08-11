@@ -1,14 +1,27 @@
 /* index */
 
 * {
-    /* Added Roboto font for better readability */
-    font-family: 'Roboto', sans-serif; 
+
 }
+
+main {
+  position: relative;     /* Creates a new stacking context */
+  z-index: 10;            /* Ensures it's above the video */
+  padding-top: 100px;     /* Prevents overlap with nav bar */
+}
+
+
+.mozilla-headline {
+  color: aliceblue;
+  font-family: "Mozilla Headline", sans-serif;
+  font-weight: 400;
+}
+
 
 .nav-bar .nav-container {
     /* Background of the header and transperency*/
     color: white;
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.7); 
     flex-direction: row;
     text-align: right;
     height: 120px;
@@ -30,9 +43,7 @@
     display: flex;
     align-items: center; /* Changed from 'right' to 'center' */
     justify-content: center;
-    border: brown solid 1px;
-    background-color: black; /* Added missing semicolon */
-    color: red;
+    color: darkblue;
     text-decoration: none;
     padding: 5px 10px; /* Reduced vertical padding from 10px to 5px */
 }
@@ -48,4 +59,11 @@
     width: auto; /* Changed from '100%' to 'auto' for better responsiveness */
     height: 30px; /* Set a specific height instead of auto */
     flex-shrink: 0; /* Prevent flex items from shrinking */
+}
+
+@media screen and (max-width: 500px) {
+    .nav-link {
+      flex-direction: column; /* Stack links vertically on small screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
 }
