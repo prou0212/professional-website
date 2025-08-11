@@ -1,23 +1,5 @@
 /* index */
 
-* {
-
-}
-
-main {
-  position: relative;     /* Creates a new stacking context */
-  z-index: 10;            /* Ensures it's above the video */
-  padding-top: 100px;     /* Prevents overlap with nav bar */
-}
-
-/*
-.mozilla-headline {
-  color: aliceblue;
-  font-family: "Mozilla Headline", sans-serif;
-  font-weight: 400;
-}
-*/
-
 .nav-bar .nav-container {
     /* Background of the header and transperency*/
     color: white;
