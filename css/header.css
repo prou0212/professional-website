@@ -1,21 +1,19 @@
-/* Your existing desktop styles */
+/* Description: This CSS file styles the header of a professional website, 
+including navigation links, logo, and responsive design for mobile devices. 
+It also imports a custom font for the headline.
+
+@author: Jesse Proulx
+@date: 2025
+*/
+
+/* For imported font */
 .mozilla-headline {
   color: aliceblue;
   font-family: "Mozilla Headline", sans-serif;
   font-weight: 400;
 }
 
-/* Add margin-top to body or main to account for fixed header */
-body {
-  margin: 0;
-  padding-top: 120px; /* Same as header height */
-}
-
-/* Alternative: you can also add it to main instead of body */
-main {
-  margin-top: 120px; /* Push main content below fixed header */
-}
-
+/* Navigation bar and the flex box container */
 .nav-bar .nav-container {
     color: white;
     background-color: rgba(0, 0, 0, 0.7); 
@@ -24,39 +22,54 @@ main {
     height: 120px;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Changed from flex-end to space-between */
+    justify-content: space-between;
     align-items: center; 
     position: fixed; 
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 0 20px; /* Changed from padding-right to padding on both sides */
-}
-
-.nav-link {
+  }
+  
+  /* Links within the navigations container */
+  .nav-link {
+    font-size: medium;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: row;
     color: darkblue;
     text-decoration: none;
     padding: 5px 10px;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: nowrap;
+    min-width: 0;
+    margin: 0 30px 0 0;
+    background-color: black;
 }
 
+/* The link remains the same color after visited */
+.nav-link:visited {
+    color: darkblue;
+}
+
+/* Individual link styles */
 .nav-link a {
     font-family: Montserrat, sans-serif;
-    font-style: bold;
-    margin: 0 10px 10px 10px;
+    font-weight: bold;
+    color: inherit; /* Use parent color */
+    margin: 10px 10px; /* Simplified margin */
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin: 5px 5px 5px 5px;
     width: auto;
     height: 30px;
+    padding: 10px 10px;
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
+/* Icon styles within the links */
 .logo img {
   padding: 10px;
   position: relative;
@@ -65,39 +78,31 @@ main {
   z-index: 1001;
 }
 
+/* Ensures the logo is centered and does not shrink */
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1001;
   padding: 30px 30px;
+  flex-shrink: 0;
 }
 
-/* CORRECTED MOBILE STYLES */
-@media screen and (max-width: 826px) {
+/* MOBILE STYLES */
+@media screen and (max-width: 999px) {
 
-  /* Adjust body/main padding for mobile header height */
-  body {
-    padding-top: 200px; /* Increased for mobile header height */
-  }
-  
-  main {
-    margin-top: 200px; /* Adjust for mobile header height */
-  }
-
-  /* Fix the nav container */
+  /* Navigation bar and container for mobile */
   .nav-bar .nav-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Start from top */
+    justify-content: flex-start;
     align-items: center;
     height: auto;
-    min-height: 180px; /* Set minimum height for mobile */
     padding: 10px;
-    gap: 15px; /* Add space between logo and nav */
+    gap: 15px;
   }
   
-  /* Style the logo */
+  /* Logo container for mobile */
   .logo {
     padding: 10px;
     display: flex;
@@ -105,36 +110,38 @@ main {
     align-items: center;
     width: 100%;
     text-align: center;
-    order: 1; /* Logo appears first */
+    order: 1; /* Logo comes first on mobile */
   }
   
+  /* Logo image styles for mobile */
   .logo img {
     display: block;
-    height: clamp(60px, 10vw, 100px);
+    height: clamp(60px, 10vw, 100px); /* Responsive resizing */
     width: auto;
     flex-shrink: 1;
   }
 
-  /* Style the navigation links container - CORRECTED SELECTOR */
+  /* Navigation links container for mobile */
   .nav-bar .nav-container .nav-link {
     display: flex;
-    flex-direction: column; /* Stack nav links vertically */
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
-    order: 2; /* Nav appears second */
+    order: 2; /* Links come after the logo on mobile */
+    flex-wrap: wrap;
   }
   
-  /* Style individual navigation links */
+  /* Link styles for mobile */
   .nav-bar .nav-container .nav-link a {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: auto; /* Changed from 100% to auto */
-    padding: 8px 15px;
-    margin: 5px 0;
-    gap: 8px; /* Space between icon and text */
+    width: auto;
+    padding: 8px 12px;
+    margin: 2px;
+    gap: 4px;
+    font-size: 14px; /* Smaller text on mobile */
   }
 }
