@@ -1,3 +1,28 @@
 * {
     background-color: black;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /* Remove any absolute/fixed positioning */
+    position: static; /* or relative */
+}
+
+main {
+    display: flex;
+    padding: 2rem;
+    justify-content: right;
+    align-items: center;
+    flex: 1;
+    color: white;
+}
+
+.home .home-content h1 span {
+    color: white;
 }
