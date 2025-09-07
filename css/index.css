@@ -15,7 +15,6 @@ header {
 }
 
 .main-content {
-    margin-top: 100px;
     display: flex;
     padding: 2rem;
     justify-content: center;
@@ -34,4 +33,15 @@ header {
 
 .main-content .home-content {
     margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-image img {
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
 }
