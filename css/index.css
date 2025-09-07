@@ -14,15 +14,24 @@ header {
     position: static; /* or relative */
 }
 
-main {
+.main-content {
+    margin-top: 100px;
     display: flex;
     padding: 2rem;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    flex: 1;
     color: white;
 }
 
-.home .home-content h1 span {
-    color: white;
+.main-content .home-image {
+    margin: 40px 40px 40px 40px;
+    padding: 10px 10px;
+    gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-content .home-content {
+    margin-left: 40px;
 }
