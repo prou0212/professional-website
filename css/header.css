@@ -44,12 +44,6 @@ It also imports a custom font for the headline.
     background-color: black;
 }
 
-/* The link remains the same color after visited
-.nav-link:visited {
-    color: darkblue;
-}
-*/
-
 .nav-link:hover .mozilla-headline{
   color: #4a9eff;
 }

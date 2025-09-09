@@ -1,0 +1,15 @@
+/* Description: This CSS file styles the background of my professional website.
+
+@author: Jesse Proulx
+@date: 2025
+*/
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+}
