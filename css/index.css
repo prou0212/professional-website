@@ -45,3 +45,14 @@ header {
 span, h1 {
     color: aliceblue;
 }
+
+.my-journey,
+.why-i-switched,
+.current-focus,
+.whats-next {
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 50px;
+    text-align: center;
+}
