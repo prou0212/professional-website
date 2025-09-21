@@ -12,7 +12,7 @@ header {
 
 .main-content {
     display: flex;
-    padding: 2rem;
+    padding: 5rem;
     justify-content: center;
     align-items: center;
     color: white;
@@ -46,16 +46,55 @@ span, h1 {
     color: aliceblue;
 }
 
-.my-journey,
+/*
+My Journey Header
+*/
+#my-journey {
+    text-align: center;
+    font-size: 60px;
+}
+
+/*
+Represents all sections
+*/
+.from-the-beginning,
 .why-i-switched,
 .current-focus,
 .whats-next {
     border: 1px solid white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 50px;
+    padding: 30px;
+    margin: 20px 40px;
+    border-radius: 10px;
     text-align: center;
-    background-color: black
+    background-color: black;
+    gap: 30px;
+}
+
+/*
+From the Beginning Section
+*/
+.main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 40px;
+
+}
+
+#main-heading {
+    text-align: center;
+}
+
+.radio-picture img {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100px;
+}
+
+
+.heading-and-section {
+    margin: 20px 0px;
 }
 
 /*
@@ -64,7 +103,7 @@ Mouse hovers over section
  - moves the section up 5px
  - Animate ALL the changes and transitioning with ease
 */
-.my-journey:hover,
+.from-the-beginning:hover,
 .why-i-switched:hover,
 .current-focus:hover,
 .whats-next:hover {
