@@ -55,4 +55,20 @@ span, h1 {
     margin: 20px 0;
     border-radius: 50px;
     text-align: center;
+    background-color: black
+}
+
+/*
+Mouse hovers over section
+ - changes border color
+ - moves the section up 5px
+ - Animate ALL the changes and transitioning with ease
+*/
+.my-journey:hover,
+.why-i-switched:hover,
+.current-focus:hover,
+.whats-next:hover {
+    border-color: #4a9eff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }

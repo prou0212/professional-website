@@ -24,7 +24,7 @@ It also imports a custom font for the headline.
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    top: 0;
+    top: 30;
     left: 0;
     z-index: 1000;
   }
