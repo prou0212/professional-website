@@ -28,6 +28,10 @@ It also imports a custom font for the headline.
     left: 0;
     z-index: 1000;
   }
+
+  .nav-container a {
+    text-decoration: none;
+  }
   
   /* Links within the navigations container */
   .nav-link {

@@ -81,11 +81,19 @@ From the Beginning Section
 
 }
 
+#left-section {
+    align-items: end;
+}
+
+#right-section {
+    align-items: start;
+}
+
 #main-heading {
     text-align: center;
 }
 
-.radio-picture img {
+.picture-section img {
     display: flex;
     flex-wrap: wrap;
     height: auto;
