@@ -110,3 +110,14 @@ Mouse hovers over section
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
+
+#academic-projects {
+    width: 500px;
+    height: 700px;
+    background-color: black;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 40px 40px;
+}
