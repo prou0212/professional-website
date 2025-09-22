@@ -13,6 +13,11 @@ It also imports a custom font for the headline.
   font-weight: 400;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 /* Navigation bar and the flex box container */
 .nav-bar .nav-container {
     color: white;
@@ -24,8 +29,6 @@ It also imports a custom font for the headline.
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    top: 30;
-    left: 0;
     z-index: 1000;
   }
 
@@ -45,7 +48,6 @@ It also imports a custom font for the headline.
     gap: 15px;
     flex-wrap: nowrap;
     min-width: 0;
-    background-color: black;
 }
 
 .nav-link:hover .mozilla-headline{

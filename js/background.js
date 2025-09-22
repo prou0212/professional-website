@@ -78,7 +78,7 @@ function createCodeSnippet() {
 
 // Create code snippets continuously
 function startAnimation() {
-    setInterval(createCodeSnippet, 1500); // New snippet every 1.5 seconds
+    setInterval(createCodeSnippet, 1000); // New snippet every 1.5 seconds
 }
 
 // Create initial snippets when page loads

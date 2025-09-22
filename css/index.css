@@ -6,8 +6,7 @@ body {
 }
 
 header {
-    /* Remove any absolute/fixed positioning */
-    position: static; /* or relative */
+    position: static;
 }
 
 .main-content {
@@ -77,20 +76,12 @@ From the Beginning Section
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 40px 40px;
-
-}
-
-#left-section {
-    align-items: end;
-}
-
-#right-section {
-    align-items: start;
+    margin: 20px 20px 20px;
 }
 
 #main-heading {
     text-align: center;
+    margin: 10px 10px;
 }
 
 .picture-section img {
@@ -98,11 +89,11 @@ From the Beginning Section
     flex-wrap: wrap;
     height: auto;
     width: 100px;
+    margin: 20px;
 }
 
-
 .heading-and-section {
-    margin: 20px 0px;
+    size: 100px;
 }
 
 /*
