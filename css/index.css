@@ -111,13 +111,42 @@ Mouse hovers over section
     transition: all 0.3s ease;
 }
 
-#academic-projects {
-    width: 500px;
-    height: 700px;
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 600px;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color: aliceblue;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 40px 40px;
+    margin: 0 40px 40px 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.academic-pics img {
+    margin: 20px 0px 20px 0px;
+    width: 450px;
+    height: auto;
+}
+
+.github-link {
+    margin: 20px 0 20px 0;
+}
+.github-link a {
+    margin-top: 20px;
+    padding: 20px;
+    border-color: #4a9eff;
+    border-radius: 10px;
+    border-style: solid;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.github-link:visited {
+    color: white
 }
