@@ -111,11 +111,15 @@ Mouse hovers over section
     transition: all 0.3s ease;
 }
 
-.project-container {
+.my-projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 450px;
+    align-items: center;
+}
+
+.project-container {
+    width: 400px;
     height: 600px;
     background-color: black;
     border-radius: 15px;
@@ -129,7 +133,7 @@ Mouse hovers over section
 
 .academic-pics img {
     margin: 20px 0px 20px 0px;
-    width: 450px;
+    width: 400px;
     height: auto;
 }
 
