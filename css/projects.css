@@ -1,3 +1,25 @@
 * {
     background-color: black;
 }
+
+/*
+For Github Links
+*/
+.github-link {
+    margin: 20px 0 20px 0;
+}
+
+.github-link a {
+    border-color: #4a9eff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.github-link:visited {
+    color: white
+}
