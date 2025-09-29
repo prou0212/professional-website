@@ -6,13 +6,6 @@ It also imports a custom font for the headline.
 @date: 2025
 */
 
-/* For imported font */
-.mozilla-headline {
-  color: aliceblue;
-  font-family: "Mozilla Headline", sans-serif;
-  font-weight: 400;
-}
-
 body, html {
   margin: 0;
   padding: 0;

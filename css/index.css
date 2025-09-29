@@ -9,6 +9,11 @@ header {
     position: static;
 }
 
+#intro {
+    font-size: 60px;
+    margin: 0;
+}
+
 .main-content {
     display: flex;
     padding: 5rem;
@@ -48,7 +53,7 @@ span, h1 {
 /*
 My Journey Header
 */
-#my-journey {
+#main-title {
     text-align: center;
     font-size: 60px;
 }
