@@ -116,7 +116,7 @@ Mouse hovers over section
     transition: all 0.3s ease;
 }
 
-.my-projects {
+/* .my-projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -142,7 +142,7 @@ Mouse hovers over section
     width: 419px;
     height: auto;
     border-radius: 15px;
-}
+} */
 
 #projects-button {
     margin: 20px 0 20px 0;
