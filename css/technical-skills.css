@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 }
 
 .skills-container {
-    width: auto;
+    width: 275px;
     height: auto;
     background-color: black;
     border-radius: 15px;
@@ -15,8 +15,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 40px 40px 40px;
     text-align: center;
-    align-items: center;
-    align-self: center;
 }
 
 .programming-icons img {
@@ -36,4 +34,8 @@
 .programming-text {
     margin-left: 20px;
     margin-top: 20px;
+}
+
+h2 {
+    color: aliceblue;
 }
