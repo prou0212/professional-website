@@ -1,0 +1,48 @@
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:flex-start;
+    padding: 0.5rem;
+}
+
+#resume-name {
+    color: #4a9eff;
+    font-size: 60px;
+    margin: 40px 0 40px 0;
+
+}
+
+#resume-header {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#resume-link {
+    gap: 50px;
+    padding: 20px;
+    text-decoration: none;
+    background-color: black;
+    border-color: #4a9eff;
+    border-radius: 10px;
+    border-style: solid;
+    align-items: center;
+}
