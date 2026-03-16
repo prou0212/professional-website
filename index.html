@@ -13,6 +13,7 @@
         <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/technical-skills.css" rel="stylesheet" type="text/css">
         <link href="css/projects.css" rel="stylesheet" type="text/css">
+        <link href="css/basic-styling.css" rel="stylesheet" type="text/css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,147 +55,143 @@
                 </nav>
             </header>
            <main>
+            <section id="hero" aria-label="Introduction">
                 <div class="main-content">
-                    <div class="home-image">
+                    <div class="home-image reveal">
                         <img src="pictures/index/jesse-proulx.jpg" alt="Jesse Proulx">
                     </div>
-                    <div class="home-content">
+                    <div class="reveal" id="home-content">
                         <h1 class="anta-regular" id="intro">Hello, I'm Jesse Proulx</h1>
-                            <h2 class="anta-regular"> Computer Programming Student</h2>
-                                <span class ="mozilla-headline">Welcome to my professional website! 
-                                    I'm a passionate front end developer with a knack for creating innovative solutions.
-                                    Computer Programming Student at Algonquin College with a GPA of 3.84.
-                                    Explore my projects, learn about my skills, and feel free to reach out!
-                                </span>
+                        <h2 class="anta-regular"> Computer Programming Student</h2>
+                        <span class ="mozilla-headline">Welcome to my professional website! 
+                            I'm a passionate front end developer with a knack for creating innovative solutions.
+                            Computer Programming Student at Algonquin College with a GPA of 3.84.
+                            Explore my projects, learn about my skills, and feel free to reach out!
+                        </span>
                     </div>
                 </div>
-                        
-                <div class="about-me">
-                    <h1 class="anta-regular main-title">My Journey</h1>
+            </section>
+                
+            <section id="about" aria-label="My Journey">
+                    <h2 class="anta-regular main-title">My Journey</h2>
                     
-                    <div class="main-section">
+                    <article class="journey-card">
                         <div class="picture-section">
                             <img src="pictures/index/radio.png" alt="radio icon">
                         </div>
-                        <div class="heading-and-section">
-                            <section class="from-the-beginning">
+                        <div class="journey-text">
+                            <div class="from-the-beginning">
                                 <h1 class="nova-square-regular main-heading">From the Beginning</h1>
-                                    <span class="mozilla-headline">I was born in <strong>April 1996</strong> and grew up in 
-                                        <strong>Winchester, Ontario, Canada.</strong> To make it a short story, 
-                                        earned my diploma in Radio Broadcasting from Algonquin College in 2017. 
-                                        The following year, I landed a part-time 
-                                        position at <strong>Jewel 98.5</strong> working promotions. 
-                                    </span>
-                            </section>
+                                <span class="mozilla-headline">I was born in <strong>April 1996</strong> and grew up in 
+                                    <strong>Winchester, Ontario, Canada.</strong> To make it a short story, 
+                                    earned my diploma in Radio Broadcasting from Algonquin College in 2017. 
+                                    The following year, I landed a part-time 
+                                    position at <strong>Jewel 98.5</strong> working promotions. 
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="main-section">
+                    <section class="journey-card">
                         <div class="picture-section">
                             <img src="pictures/index/school.png" alt="school cap icon">    
                         </div>
-                        <div class="heading-and-section">
-                            <section class="why-i-switched">
+                        <div class="journey-text">
+                            <div class="why-i-switched">
                                 <h1 class="nova-square-regular main-heading">Change of Career</h1>
-                                    <span class="mozilla-headline">In March 2020, I was let go from my radio job. I was encouraged 
-                                        to apply for Computer Programming at Algonquin College in early 2024. After 7 years 
-                                        since my last graduation, I got <strong>ACCEPTED</strong> into the program! 
-                                    </span>
-                            </section>
+                                <span class="mozilla-headline">In March 2020, I was let go from my radio job. I was encouraged 
+                                    to apply for Computer Programming at Algonquin College in early 2024. After 7 years 
+                                    since my last graduation, I got <strong>ACCEPTED</strong> into the program! 
+                                </span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="main-section">
+                    </section>
+                    
+                    <section class="journey-card">
                         <div class="picture-section">
                             <img src="pictures/index/focus2.png" alt="focus icon">
                         </div>
-                        <div class="heading-and-section">
-                            <section class="current-focus">
+                        <div class="journey-text">
+                            <div class="current-focus">
                                 <h1 class="nova-square-regular main-heading">My Focus</h1>
-                                    <span class="mozilla-headline">My current focus is front-end development. 
-                                        I'm passionate about delivering quality web applications to clients. Through my ongoing 
-                                        studies in HTML5, CSS3, and JavaScript, I'm committed to reaching 
-                                        the highest level of proficiency in web development.
-                                    </span>
-                            </section>
+                                <span class="mozilla-headline">My current focus is front-end development. 
+                                    I'm passionate about delivering quality web applications to clients. Through my ongoing 
+                                    studies in HTML5, CSS3, and JavaScript, I'm committed to reaching 
+                                    the highest level of proficiency in web development.
+                                </span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="main-section">
+                    </section>
+                    
+                    <section class="journey-card">
                         <div class="picture-section">
                             <img src="pictures/index/next.png" alt="next icon">
                         </div>
-                        <div class="heading-and-section">
-                            <section class="whats-next">
+                        <div class="journey-text">
+                            <div class="whats-next">
                                 <h1 class="nova-square-regular main-heading">What's Next?</h1>
-                                    <span class="mozilla-headline">In January 2026, I'll return for my final semester 
-                                        of Computer Programming. My goal is not only to graduate but to network with 
-                                        industry professionals and volunteer with a web or mobile application company 
-                                        to gain real-world experience. The future is uncertain, but I know it's heading up!
-                                    </span>
-                            </section>
+                                <span class="mozilla-headline">In January 2026, I'll return for my final semester 
+                                    of Computer Programming. My goal is not only to graduate but to network with 
+                                    industry professionals and volunteer with a web or mobile application company 
+                                    to gain real-world experience. The future is uncertain, but I know it's heading up!
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+            </section>
 
                 <h1 class="anta-regular main-title">Academic & Personal Projects</h1>
                 
-                <div class="my-projects">
+                <section class="my-projects reveal">
                     <div class="project-container">
-                        <section class="mozilla-headline">
-                            <h2 class="nova-square-regular main-heading">Truth or Dare Game</h2>
-                            <span class="mozilla-headline">
-                                Console based game allows you to select up to 4 players. Prompts 
-                                truth or dare and utilizes a random instance to randomly generate 
-                                truth or dares whenever the player selects the following. Built in 
-                                Eclipse.
-                            </span>
+                        <h2 class="nova-square-regular main-heading">Truth or Dare Game</h2>
+                        <span class="mozilla-headline">
+                            Console based game allows you to select up to 4 players. Prompts 
+                            truth or dare and utilizes a random instance to randomly generate 
+                            truth or dares whenever the player selects the following. Built in 
+                            Eclipse.
+                        </span>
                             <div class="academic-pics">
-                                <img src="pictures/index/truth-or-dare.png" alt="truth or dare" id="academic-pics">
+                                <img src="pictures/index/truth-or-dare.png" alt="truth or dare">
                             </div>
-                        </section>
                     </div>
 
                     <div class="project-container">
-                        <section class="mozilla-headline">
-                            <h2 class="nova-square-regular main-heading">1st Professional Website</h2>
-                            <span class="mozilla-headline">
-                                Professional website for my 1st assignment of Web Programming 
-                                2nd semester. Features multiple different web pages including my resume
-                                professional projects and contact utlizing forms. Built in Visual Studio 
-                                Code.
-                            </span>
+                        <h2 class="nova-square-regular main-heading">Meticulous Pete</h2>
+                        <span class="mozilla-headline">
+                            Meticulous Peter is a contractor/handyman business 
+                            website built for Peter Rousseau, offering services 
+                            like drywall, flooring, decking, fencing, bathrooms, 
+                            and kitchen renovations.
+                        </span>
                             <div class="academic-pics">
-                                <img src="pictures/1st-pro-website.png" alt="Professional Website Picture" id="academic-pics">
+                                <img src="pictures/index/meticulous-peter.png" alt="Professional Website Picture">
                             </div>
-                        </section>
                     </div>
 
                     <div class="project-container">
-                        <section class="mozilla-headline">
-                            <h2 class="nova-square-regular main-heading">Cookbook Website</h2>
-                            <span class="mozilla-headline">
-                                Cookbook Website for 2nd assignment of Web Programming
-                                2nd semester. Features user recipes, custom recices
-                                and personal favourites. Written in PHP
-                                with Apache Server. Built in Visual Studio Code.
-                            </span>
+                        <h2 class="nova-square-regular main-heading">Cookbook Website</h2>
+                        <span class="mozilla-headline">
+                            Cookbook Website for 2nd assignment of Web Programming
+                            2nd semester. Features user recipes, custom recices
+                            and personal favourites. Written in PHP
+                            with Apache Server. Built in Visual Studio Code.
+                        </span>
                             <div class="academic-pics">
-                                <img src="pictures/cookbook-website.png" alt="Cookbook Website Picture" id="academic-pics">
+                                <img src="pictures/cookbook-website.png" alt="Cookbook Website Picture">
                             </div>
-                        </section>
                     </div>
-                </div>
-                <div class="mozilla-headline" id="projects-button">
+                </section>
+
+                <div class="buttons">
                     <a href="projects.html" class="mozilla-headline">Click for Projects</a>
                 </div>
                 
                 <h1 class="anta-regular main-title">Technical Skills</h1>
 
-                    <div class="my-technical-skills">
+                    <div class="my-technical-skills reveal">
                         <div class="skills-container">
-                            <section>
-                                <h2 class="nova-square-regular main-heading">Programming Languages</h2>
+                            <h2 class="nova-square-regular main-heading">Programming Languages</h2>
                                 <div class="languages-list">
                                     <div class="programming-icons">
                                         <img src="pictures/programming-icons/java.png" alt="Java Icon">
@@ -235,12 +232,10 @@
                                         <span class="mozilla-headline">SQL</span>
                                     </div>
                                 </div>
-                            </section>
                         </div>
 
                         <div class="skills-container">
-                            <section>
-                                <h2 class="nova-square-regular main-heading">Web Development Tools</h2>
+                            <h2 class="nova-square-regular main-heading">Web Development Tools</h2>
                                 <div class="languages-list">
                                     <div class="programming-icons">
                                         <img src="pictures/programming-icons/web-icons/html.png" alt="HTML5 Icon">
@@ -273,12 +268,10 @@
                                         <span class="mozilla-headline">PHP</span>
                                     </div>
                                 </div>
-                            </section>
                         </div>
 
                         <div class="skills-container">
-                            <section>
-                                <h2 class="nova-square-regular main-heading">Development/Software Tools</h2>
+                            <h2 class="nova-square-regular main-heading">Development/Software Tools</h2>
                                 <div class="languages-list">
                                     <div class="programming-icons">
                                         <img src="pictures/programming-icons/ide-software/visual-studio-code.png" alt="VS Code Icon">
@@ -319,12 +312,10 @@
                                         <span class="mozilla-headline">Apache Netbeans</span>
                                     </div>
                                 </div>
-                            </section>
                         </div>
 
                         <div class="skills-container">
-                            <section>
-                                <h2 class="nova-square-regular main-heading">Soft/Professional Skills</h2>
+                            <h2 class="nova-square-regular main-heading">Soft/Professional Skills</h2>
                                 <div class="languages-list">
                                     <div class="programming-icons">
                                         <img src="pictures/programming-icons/soft-skills/adaptability.png" alt="Adaptability Icon">
@@ -365,11 +356,10 @@
                                         <span class="mozilla-headline">Time Management</span>
                                     </div>
                                 </div>
-                            </section>
                         </div>
                     </div>
-                        <div class="mozilla-headline" id="projects-button">
-                            <a href="technical-skills.html" class="mozilla-headline">Click for Skills</a>
+                        <div class="buttons">
+                            <a href="projects.html" class="mozilla-headline">Click for Projects</a>
                         </div>
                     
            </main>
@@ -379,6 +369,17 @@
                 </div>
             </footer>
         </body>
+        <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
 
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            </script>
 </html>
 

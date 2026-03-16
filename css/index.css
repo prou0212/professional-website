@@ -27,7 +27,7 @@ header {
     gap: 100px;
 }
 
-.main-content .home-content {
+.main-content #home-content {
     margin-left: 40px;
     align-items: center;
     justify-content: center;
@@ -73,7 +73,7 @@ Represents all sections
 /*
 From the Beginning Section
 */
-.main-section {
+.journey-card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,7 +93,7 @@ From the Beginning Section
     margin: 20px;
 }
 
-.heading-and-section {
+.journey-card {
     size: 100px;
 }
 
@@ -112,24 +112,32 @@ Mouse hovers over section
     transition: all 0.3s ease;
 }
 
-#projects-button {
-    margin-top: 10px;
-    margin-bottom: 70px;
-    text-align: center;
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
 }
 
-#projects-button a {
+.buttons a {
+    margin: 0;
+    display: block;
+    width: 100px;
     padding: 20px;
     text-decoration: none;
     background-color: black;
     border-color: #4a9eff;
     border-radius: 10px;
     border-style: solid;
-    align-items: center;
+    text-align: center;
 }
 
 #projects-button:visited {
     color: white
+}
+
+.academic-pics {
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1000px) {
@@ -139,7 +147,7 @@ Mouse hovers over section
         flex-direction: column;
     }
 
-    .home-content {
+    #home-content {
         text-align: center;
     }
 }
