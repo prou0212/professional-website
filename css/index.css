@@ -1,3 +1,6 @@
+* {
+    color: white;
+}
 
 body {
     display: flex;
@@ -20,15 +23,8 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-}
-
-.main-content .home-image {
-    margin: 40px 40px 40px 40px;
-    padding: 10px 10px;
+    flex-direction: row;
     gap: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .main-content .home-content {
@@ -53,7 +49,7 @@ span, h1 {
 /*
 My Journey Header
 */
-#main-title {
+.main-title {
     text-align: center;
     font-size: 60px;
 }
@@ -84,7 +80,7 @@ From the Beginning Section
     margin: 20px 20px 20px;
 }
 
-#main-heading {
+.main-heading {
     text-align: center;
     margin: 10px 10px;
 }
@@ -136,9 +132,14 @@ Mouse hovers over section
     color: white
 }
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1000px) {
     
-    /* .my-projects .project-container {
-        width: ;
-    } */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-content {
+        text-align: center;
+    }
 }
