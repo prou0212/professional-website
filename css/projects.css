@@ -1,50 +1,14 @@
-
-/* For project containers */
-.my-projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+#project-title-sub-heading {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 200px 100px 200px;
 }
 
 .project-container {
-    width: 419px;
-    height: 340px;
-    background-color: black;
-    border-radius: 15px;
-    border-color: aliceblue;
-    border-style: solid;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 40px 40px 40px;
-    text-align: center;
-}
-
-.academic-pics img {
-    margin: 20px 0px 0px 0px;
-    width: 419px;
-    height: auto;
-    border-radius: 15px;
-}
-
-/*
-For Github Links
-*/
-.github-link {
-    margin: 20px 0 20px 0;
-}
-
-.github-link a {
-    border-color: #4a9eff;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    border-style: solid;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-}
-
-.github-link:visited {
-    color: white
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* flex: auto; */
+    align-items: center;
 }
