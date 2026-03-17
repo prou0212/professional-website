@@ -1,16 +1,4 @@
-* {
-    color: white;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    position: static;
-}
+/* Hero Section */
 
 #intro {
     font-size: 60px;
@@ -22,132 +10,148 @@ header {
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    color: white;
     flex-direction: row;
     gap: 100px;
 }
 
 .main-content #home-content {
     margin-left: 40px;
-    align-items: center;
-    justify-content: center;
 }
 
 .home-image img {
     height: auto;
     width: 300px;
     border-radius: 50%;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
+    border-width: 2px solid white;
 }
 
-span, h1 {
-    color: aliceblue;
-}
+/* MY JOURNEY SECTION */
 
-/*
-My Journey Header
-*/
-.main-title {
-    text-align: center;
-    font-size: 60px;
-}
-
-/*
-Represents all sections
-*/
-.from-the-beginning,
-.why-i-switched,
-.current-focus,
-.whats-next {
-    border: 1px solid white;
-    padding: 30px;
-    margin: 20px 40px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: black;
-    gap: 30px;
-}
-
-/*
-From the Beginning Section
-*/
 .journey-card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px 20px 20px;
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: black;
+    transition: border-color 0.3 ease, transform 0.3s ease;
 }
 
-.main-heading {
-    text-align: center;
-    margin: 10px 10px;
+.journey-card:hover {
+    border-color: #4a9eff;
+    transform: translateY(-5px);
 }
 
 .picture-section img {
-    display: flex;
-    flex-wrap: wrap;
     height: auto;
     width: 100px;
     margin: 20px;
 }
 
-.journey-card {
-    size: 100px;
+.journey-text {
+    width: 100%;
 }
 
-/*
-Mouse hovers over section
- - changes border color
- - moves the section up 5px
- - Animate ALL the changes and transitioning with ease
-*/
-.from-the-beginning:hover,
-.why-i-switched:hover,
-.current-focus:hover,
-.whats-next:hover {
+/* PROJECTS SECTION */
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-container {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    padding: 20px;
+    max-width: 300px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+ 
+.project-container:hover {
     border-color: #4a9eff;
     transform: translateY(-5px);
-    transition: all 0.3s ease;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-}
-
-.buttons a {
-    margin: 0;
-    display: block;
-    width: 100px;
-    padding: 20px;
-    text-decoration: none;
-    background-color: black;
-    border-color: #4a9eff;
-    border-radius: 10px;
-    border-style: solid;
-    text-align: center;
-}
-
-#projects-button:visited {
-    color: white
-}
-
-.academic-pics {
+.academic-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
     object-fit: cover;
+}
+
+/*TECHNICAL SKILLS SECTION*/
+
+.my-technical-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container {
+    width: 275px;
+    height: auto;
+    border-radius: 15px;
+    border-style: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 40px 40px 40px;
+    text-align: center;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-container:hover {
+    border-color: #4a9eff;
+    transform: translateY(-5px);
+}
+
+.programming-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.languages-list {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.programming-text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: aliceblue;
 }
 
 @media screen and (max-width: 1000px) {
     
     .main-content {
-        display: flex;
         flex-direction: column;
+        padding: 2rem;
+        gap: 40px;
     }
-
+ 
     #home-content {
         text-align: center;
+        margin-left: 0;
+    }
+ 
+    .journey-card {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .main-title {
+        font-size: 40px;
     }
 }
+ 
