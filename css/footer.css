@@ -4,6 +4,7 @@ footer {
 }
 
 .footer-section {
+    margin: 0;
     background-color: rgba(0, 0, 0, 0.7); 
     flex-basis: auto;
     height: 120px;

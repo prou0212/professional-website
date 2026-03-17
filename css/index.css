@@ -42,12 +42,6 @@
     border-radius: 10px;
     padding: 30px;
     background-color: black;
-    transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.journey-card:hover {
-    border-color: #4a9eff;
-    transform: translateY(-5px);
 }
 
 .journey-card .picture-section img {
@@ -86,12 +80,6 @@
     background-color: black;
     padding: 20px;
     overflow: hidden;
-    transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.project-container:hover {
-    border-color: #4a9eff;
-    transform: translateY(-5px);
 }
 
 /* each project gets its own background-image class — no inline styles needed */
@@ -133,12 +121,6 @@
     border: 1px solid aliceblue;
     margin: 0 40px 40px 40px;
     text-align: center;
-    transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.skills-container:hover {
-    border-color: #4a9eff;
-    transform: translateY(-5px);
 }
 
 .programming-icons img {

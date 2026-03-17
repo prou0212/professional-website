@@ -22,7 +22,6 @@
     color: #4a9eff;
     font-size: 60px;
     margin: 40px 0 40px 0;
-
 }
 
 #resume-header {
@@ -30,6 +29,10 @@
     font-size: 30px;
 }
 
+#contact-heading {
+    font-size: 20px; 
+    text-align: center;
+}
 .personal-details-image img {
     height: 20px;
     width: 20px;
@@ -59,6 +62,16 @@
 #resume-link:hover {
     background-color: #4a9eff;
     color: black;
+}
+
+.resume-picture-container {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.resume-picture-container img {
+    box-shadow: 15px 15px 40px 0 rgba(74, 158, 255, 0.5);
 }
  
 @media screen and (max-width: 768px) {
