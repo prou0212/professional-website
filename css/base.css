@@ -30,7 +30,7 @@ header {
     align-items: center;
     margin: 40px;
 }
- 
+
 .buttons a {
     display: block;
     width: 100px;
@@ -42,11 +42,11 @@ header {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
- 
+
 .buttons a:visited {
     color: white;
 }
- 
+
 .buttons a:hover {
     background-color: #4a9eff;
     color: black;

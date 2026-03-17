@@ -1,4 +1,7 @@
-/* Hero Section */
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
 
 #intro {
     font-size: 60px;
@@ -7,10 +10,10 @@
 
 .main-content {
     display: flex;
-    padding: 5rem;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    padding: 5rem;
     gap: 100px;
 }
 
@@ -22,10 +25,13 @@
     height: auto;
     width: 300px;
     border-radius: 50%;
-    border-width: 2px solid white;
+    border: 2px solid white;
 }
 
-/* MY JOURNEY SECTION */
+
+/* ============================================
+   MY JOURNEY SECTION
+   ============================================ */
 
 .journey-card {
     display: flex;
@@ -36,7 +42,7 @@
     border-radius: 10px;
     padding: 30px;
     background-color: black;
-    transition: border-color 0.3 ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .journey-card:hover {
@@ -44,7 +50,7 @@
     transform: translateY(-5px);
 }
 
-.picture-section img {
+.journey-card .picture-section img {
     height: auto;
     width: 100px;
     margin: 20px;
@@ -54,37 +60,63 @@
     width: 100%;
 }
 
-/* PROJECTS SECTION */
+
+/* ============================================
+   PROJECTS SECTION
+   ============================================ */
 
 .my-projects {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;      
+    flex-wrap: wrap;          
     justify-content: center;
+    align-items: stretch;     
     gap: 20px;
+    padding: 20px;
 }
 
 .project-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;                  
+    min-width: 220px;         
+    max-width: 400px;         
     border: 1px solid white;
     border-radius: 10px;
     background-color: black;
     padding: 20px;
-    max-width: 300px;
+    overflow: hidden;
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
- 
+
 .project-container:hover {
     border-color: #4a9eff;
     transform: translateY(-5px);
 }
 
-.academic-pic {
+/* each project gets its own background-image class — no inline styles needed */
+.truth-or-dare-pic   { background-image: url('../pictures/index/truth-or-dare.png'); }
+.meticulous-pete-pic { background-image: url('../pictures/index/meticulous-peter.png'); }
+.cookbook-pic        { background-image: url('../pictures/cookbook-website.png'); }
+
+.academic-pics {
     width: 100%;
-    height: auto;
+    height: 180px;
     border-radius: 6px;
-    object-fit: cover;
+    margin-top: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #111;
 }
 
-/*TECHNICAL SKILLS SECTION*/
+.academic-pics img {
+    display: none;
+}
+
+/* ============================================
+   TECHNICAL SKILLS SECTION
+   ============================================ */
 
 .my-technical-skills {
     display: flex;
@@ -97,8 +129,8 @@
     width: 275px;
     height: auto;
     border-radius: 15px;
-    border-style: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid aliceblue;
     margin: 0 40px 40px 40px;
     text-align: center;
     transition: border-color 0.3s ease, transform 0.3s ease;
@@ -117,10 +149,10 @@
 .languages-list {
     display: flex;
     flex-direction: row;
-    margin: 10px;
-    align-items: center;
-    text-align: center;
     justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
 }
 
 .programming-text {
@@ -128,30 +160,36 @@
     margin-top: 20px;
 }
 
-h2 {
-    color: aliceblue;
-}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
 
 @media screen and (max-width: 1000px) {
-    
+
     .main-content {
         flex-direction: column;
         padding: 2rem;
         gap: 40px;
     }
- 
+
     #home-content {
         text-align: center;
         margin-left: 0;
     }
- 
+
     .journey-card {
         flex-direction: column;
         text-align: center;
     }
- 
+
     .main-title {
         font-size: 40px;
     }
+
+    .project-container {
+        flex: unset;
+        width: 100%;
+        max-width: 400px;
+    }
 }
- 

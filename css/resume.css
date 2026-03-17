@@ -1,3 +1,5 @@
+/* RESUME LAYOUT*/
+
 .resume-container {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +17,7 @@
     padding: 0.5rem;
 }
 
+/* RESUME HEADER */
 #resume-name {
     color: #4a9eff;
     font-size: 60px;
@@ -23,26 +26,49 @@
 }
 
 #resume-header {
-    color: aliceblue;
+    color: white;
     font-size: 30px;
 }
 
-img {
+.personal-details-image img {
     height: 20px;
     width: 20px;
 }
 
-a {
+.personal-details-text a {
     text-decoration: none;
 }
 
 #resume-link {
-    gap: 50px;
-    padding: 20px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 60px auto;
+    padding: 20px 30px;
     text-decoration: none;
     background-color: black;
-    border-color: #4a9eff;
+    border: 1px solid #4a9eff;
     border-radius: 10px;
-    border-style: solid;
-    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+#resume-link:visited {
+    color: white;
+}
+ 
+#resume-link:hover {
+    background-color: #4a9eff;
+    color: black;
+}
+ 
+@media screen and (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        gap: 40px;
+        margin: 20px;
+    }
+ 
+    #resume-name {
+        font-size: 40px;
+    }
 }
