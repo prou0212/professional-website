@@ -1,4 +1,3 @@
-
 /* ============================================
    HERO SECTION
    ============================================ */
@@ -28,10 +27,21 @@
     border: 2px solid white;
 }
 
+.projects-main-headings, .journey-main-headings {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.journey-main-headings {
+    margin: 0;
+}
 
 /* ============================================
-   MY JOURNEY SECTION
-   ============================================ */
+MY JOURNEY SECTION
+============================================ */
 
 .journey-card {
     display: flex;
@@ -42,6 +52,7 @@
     border-radius: 10px;
     padding: 30px;
     background-color: black;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .journey-card .picture-section img {
@@ -51,60 +62,84 @@
 }
 
 .journey-text {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.journey-text h3,
+.journey-heading {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.journey-text span {
+    text-align: left;
+    margin: 0;
 }
 
 
 /* ============================================
-   PROJECTS SECTION
-   ============================================ */
+PROJECTS SECTION
+============================================ */
 
 .my-projects {
     display: flex;
-    flex-direction: row;      
-    flex-wrap: wrap;          
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;     
-    gap: 20px;
-    padding: 20px;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px 40px;
 }
 
 .project-container {
     display: flex;
     flex-direction: column;
-    flex: 1;                  
-    min-width: 220px;         
-    max-width: 400px;         
+    flex: 1;
+    min-width: 250px;
+    max-width: 380px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 14px;
     background-color: black;
-    padding: 20px;
-    overflow: hidden;
+    overflow: hidden;       /* clips image to card corners */
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
-
-/* each project gets its own background-image class — no inline styles needed */
-.truth-or-dare-pic   { background-image: url('../pictures/index/truth-or-dare.png'); }
-.meticulous-pete-pic { background-image: url('../pictures/index/meticulous-peter.png'); }
-.cookbook-pic        { background-image: url('../pictures/cookbook-website.png'); }
 
 .academic-pics {
     width: 100%;
-    height: 180px;
-    border-radius: 6px;
-    margin-top: 12px;
-    background-size: contain;
+    height: 220px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #111;
+    background-position: center top;
 }
 
 .academic-pics img {
     display: none;
 }
 
+.truth-or-dare-pic   { background-image: url('../pictures/index/truth-or-dare.png'); }
+.meticulous-pete-pic { background-image: url('../pictures/index/meticulous-peter.png'); }
+.valence-noir-pic    { background-image: url('../pictures/index/VALENCE-NOIR.png'); }
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-text span {
+    padding: 0 15px 15px 15px;
+    text-align: center;
+}
+
 /* ============================================
-   TECHNICAL SKILLS SECTION
-   ============================================ */
+TECHNICAL SKILLS SECTION
+============================================ */
+.tech-main-heading {
+    text-align: center;
+    margin: 10px 10px;
+}
 
 .my-technical-skills {
     display: flex;
@@ -121,6 +156,7 @@
     border: 1px solid aliceblue;
     margin: 0 40px 40px 40px;
     text-align: center;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .programming-icons img {
