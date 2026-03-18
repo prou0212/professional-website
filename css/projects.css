@@ -8,11 +8,13 @@
 .project-container-header {
     margin: 0;
 }
+
 .individual-project-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    padding: 30px;
 }
 
 #background-project-container {
@@ -26,7 +28,7 @@
     font-size: 40px
 }
 
-#professional-projects {
+.professional-projects, .personal-projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,8 +41,10 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#professional-projects h2 {
+.professional-projects h2,
+.personal-projects h2 {
     margin: 0;
+    padding: 10px 0 10px 0;
 }
 
 .academic-pics {
@@ -55,8 +59,20 @@
     background-image: url('../pictures/index/meticulous-peter.png');
 }
 
+.valence-noir-image {
+    background-image: url('../pictures/index/VALENCE-NOIR.png');
+}
+
 .project-description {
     padding: 20px;
     text-align: center;
     font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
