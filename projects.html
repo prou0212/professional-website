@@ -53,16 +53,35 @@
            <main>
                 <h1 class="anta-regular main-title">Projects</h1> 
                     <span class="mozilla-headline" id="project-title-sub-heading">From professional, personal and academic projects that
-                        showcase problem solving ability and stylistic ability.
+                        showcase problem solving and stylistic ability.
                     </span>
-                    <hr class="divider">
-                    <h2 class="nova-square-regular project-container-header">Professional Projects</h2>
-                    <div class="project-container">
-                        <div class="project">
-                            <h2 class="mozilla-headline">Me</h2>
+                    <div id="background-project-container">
+                        <h2 class="nova-square-regular project-container-header">Professional Projects</h2>
+                        <div class="individual-project-container">
+                            <div id="professional-projects">
+                                <div class="academic-pics meticulous-pete-image" role="img" aria-label="meticulous pete screenshot"></div>
+                                <h2 class="mozilla-headline">Meticulous Pete</h2>
+                                <span class="mozilla-headline project-description">
+                                    Meticulous Peter is a contractor/handyman business website built for Peter Rousseau, 
+                                    offering services like drywall, flooring, decking, fencing, bathrooms, and kitchen 
+                                    renovations.
+                                </span>
+                            </div>
                         </div>
                     </div>
             </main>
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            </script>
             <footer>
                 <div class="footer-section">
                     <span class="mozilla-headline"> &copy; 2025 Jesse Proulx - All Rights Reserved</span>
