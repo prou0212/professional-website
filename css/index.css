@@ -3,40 +3,41 @@
    ============================================ */
 
 #intro {
-    font-size: 60px;
-    margin: 0;
+  font-size: 60px;
+  margin: 0;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 100px;
 }
 
 .main-content #home-content {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .home-image img {
-    height: auto;
-    width: 300px;
-    border-radius: 50%;
-    border: 2px solid white;
+  height: auto;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
-.projects-main-headings, .journey-main-headings {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    text-align: center;
-    margin: 20px;
+.projects-main-headings,
+.journey-main-headings {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px;
 }
 
 .journey-main-headings {
-    margin: 0;
+  margin: 0;
 }
 
 /* ============================================
@@ -44,178 +45,188 @@ MY JOURNEY SECTION
 ============================================ */
 
 .journey-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 30px;
-    background-color: black;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* Hovering for containers */
+article.journey-card:hover {
+  border-color: #4a9eff;
+  transform: translateY(-20px) scale(0.9);
 }
 
 .journey-card .picture-section img {
-    height: auto;
-    width: 100px;
-    margin: 20px;
+  height: auto;
+  width: 100px;
+  margin: 20px;
 }
 
 .journey-text {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .journey-text h3,
 .journey-heading {
-    text-align: left;
-    margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .journey-text span {
-    text-align: left;
-    margin: 0;
+  text-align: left;
+  margin: 0;
 }
-
 
 /* ============================================
 PROJECTS SECTION
 ============================================ */
 
 .my-projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 30px;
-    padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 20px 40px;
 }
 
 .project-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 250px;
-    max-width: 380px;
-    border: 1px solid white;
-    border-radius: 14px;
-    background-color: black;
-    overflow: hidden;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 250px;
+  max-width: 380px;
+  border: 1px solid white;
+  border-radius: 14px;
+  background-color: black;
+  overflow: hidden;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .academic-pics {
-    width: 100%;
-    height: 220px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .academic-pics img {
-    display: none;
+  display: none;
 }
 
-.truth-or-dare-pic   { 
-    background-image: url('../pictures/index/truth-or-dare.png'); 
+.truth-or-dare-pic {
+  background-image: url("../pictures/index/truth-or-dare.png");
 }
 
-.meticulous-pete-pic { 
-    background-image: url('../pictures/index/meticulous-peter.png'); 
+.meticulous-pete-pic {
+  background-image: url("../pictures/index/meticulous-peter.png");
 }
 
-.valence-noir-pic { 
-    background-image: url('../pictures/index/VALENCE-NOIR.png'); 
+.valence-noir-pic {
+  background-image: url("../pictures/index/VALENCE-NOIR.png");
 }
 
 .project-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .project-text span {
-    padding: 0 15px 15px 15px;
-    text-align: center;
+  padding: 0 15px 15px 15px;
+  text-align: center;
 }
 
 /* ============================================
 TECHNICAL SKILLS SECTION
 ============================================ */
 .tech-main-heading {
-    text-align: center;
-    margin: 10px 10px;
+  text-align: center;
+  margin: 10px 10px;
 }
 
 .my-technical-skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-container {
-    width: 275px;
-    height: auto;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid aliceblue;
-    margin: 0 40px 40px 40px;
-    text-align: center;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+  width: 275px;
+  height: auto;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid aliceblue;
+  margin: 0 40px 40px 40px;
+  text-align: center;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .programming-icons img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .languages-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
 }
 
 .programming-text {
-    margin-left: 20px;
-    margin-top: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-
+.programming-icons i {
+  font-size: 18px;
+}
 /* ============================================
    RESPONSIVE
    ============================================ */
 
 @media screen and (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 40px;
+  }
 
-    .main-content {
-        flex-direction: column;
-        padding: 2rem;
-        gap: 40px;
-    }
+  #home-content {
+    text-align: center;
+    margin-left: 0;
+  }
 
-    #home-content {
-        text-align: center;
-        margin-left: 0;
-    }
+  .journey-card {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .journey-card {
-        flex-direction: column;
-        text-align: center;
-    }
+  .main-title {
+    font-size: 40px;
+  }
 
-    .main-title {
-        font-size: 40px;
-    }
-
-    .project-container {
-        flex: unset;
-        width: 100%;
-        max-width: 400px;
-    }
+  .project-container {
+    flex: unset;
+    width: 100%;
+    max-width: 400px;
+  }
 }

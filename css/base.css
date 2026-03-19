@@ -18,15 +18,6 @@ header {
     font-size: 60px;
 }
 
-/* Hovering for containers */
-.from-the-beginning:hover,
-.why-i-switched:hover,
-.current-focus:hover,
-.whats-next:hover {
-    border-color: #4a9eff;
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-}
 /* Buttons */
 .buttons {
     display: flex;
