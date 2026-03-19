@@ -18,6 +18,15 @@ header {
     font-size: 60px;
 }
 
+/* Hovering for containers */
+.from-the-beginning:hover,
+.why-i-switched:hover,
+.current-focus:hover,
+.whats-next:hover {
+    border-color: #4a9eff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
 /* Buttons */
 .buttons {
     display: flex;
@@ -35,16 +44,17 @@ header {
     background-color: black;
     border: 1px solid #4a9eff;
     border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 1.5s ease;
 }
 
 .buttons a:visited {
     color: white;
 }
 
-.buttons a:hover {
+div.buttons a:hover {
     background-color: #4a9eff;
     color: black;
+    transform: translateY(0) scale(0.9);
 }
 
 /* Reveal Text Feature */
