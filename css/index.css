@@ -56,7 +56,6 @@ MY JOURNEY SECTION
   transition: all 0.3s ease;
 }
 
-/* Hovering for containers */
 article.journey-card:hover {
   border-color: #4a9eff;
   transform: translateY(-20px) scale(0.9);
@@ -114,7 +113,9 @@ PROJECTS SECTION
     transform 0.3s ease;
 }
 
-article.project-container:hover {
+/* FOR BOTH PROJECTS AND SKILLS */
+article.project-container:hover,
+div.skills-container:hover {
   border-color: #4a9eff;
   transform: translateY(-20px) scale(1.1);
 }
