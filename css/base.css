@@ -1,61 +1,66 @@
 * {
-    color: white;
+  color: white;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-    position: static;
+  position: static;
 }
 
 /* Titles & Headings */
 .main-title {
-    text-align: center;
-    font-size: 60px;
+  text-align: center;
+  font-size: 60px;
 }
 
 /* Buttons */
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .buttons a {
-    display: block;
-    width: 100px;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    background-color: black;
-    border: 1px solid #4a9eff;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 1.5s ease;
+  display: block;
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid #4a9eff;
+  border-radius: 10px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 1.5s ease;
 }
 
 .buttons a:visited {
-    color: white;
+  color: white;
 }
 
 div.buttons a:hover {
-    background-color: #4a9eff;
-    color: black;
-    transform: translateY(0) scale(0.9);
+  background-color: #4a9eff;
+  color: black;
+  transform: translateY(0) scale(0.9);
 }
 
 /* Reveal Text Feature */
 .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 2.0s ease, transform 2.0s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 2s ease,
+    transform 2s ease;
 }
 
 .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
