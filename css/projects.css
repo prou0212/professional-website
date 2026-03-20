@@ -29,7 +29,8 @@
 }
 
 .professional-projects,
-.personal-projects {
+.personal-projects,
+.academic-projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,12 +42,23 @@
   border: 1px #4a9eff solid;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.4);
+  transition:
+    border-color 1.5s ease,
+    transform 1.5s ease;
 }
 
 .professional-projects h2,
-.personal-projects h2 {
+.personal-projects h2,
+.academic-projects h2 {
   margin: 0;
   padding: 0;
+}
+
+.professional-projects:hover,
+.personal-projects:hover,
+.academic-projects:hover {
+  border-color: #4a9eff;
+  transform: translateY(-20px) scale(1);
 }
 
 .academic-pics {
@@ -89,6 +101,10 @@
   background-image: url("../pictures/projects/recordcollection.png");
 }
 
+.investment-portfolio-image {
+  background-image: url("../pictures/projects/investment-portfolio.png");
+}
+
 .project-description {
   padding: 20px;
   text-align: center;
@@ -100,5 +116,4 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
 }
