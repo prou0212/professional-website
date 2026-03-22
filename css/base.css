@@ -6,6 +6,170 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* BACKGROUND */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  overflow: hidden;
+}
+
+.code-snippet {
+  position: absolute;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+  animation: float-code 30s infinite linear;
+  pointer-events: none;
+}
+
+/* HTML syntax colors */
+.code-snippet.html {
+  color: rgba(255, 120, 70, 0.4);
+}
+
+.code-snippet.css {
+  color: rgba(100, 200, 255, 0.4);
+}
+
+.code-snippet.tag {
+  color: rgba(255, 200, 100, 0.4);
+}
+
+.code-snippet.property {
+  color: rgba(150, 255, 150, 0.4);
+}
+
+@keyframes float-code {
+  0% {
+    transform: translateX(-100px) translateY(100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw) translateY(-100px);
+    opacity: 0;
+  }
+}
+
+/* Subtle glow effect for some snippets */
+.code-snippet.glow {
+  text-shadow: 0 0 10px currentColor;
+}
+
+/*fonts*/
+.mozilla-headline-header {
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#anta-regular-header {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  color: #4a9eff;
+}
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nova-square-regular {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mozilla-headline {
+  color: aliceblue;
+  font-family: "Mozilla Headline", sans-serif;
+  font-weight: 400;
+}
+
+/* Navigation bar and the flex box container */
+.nav-bar .nav-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: row;
+  text-align: right;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-container a {
+  text-decoration: none;
+}
+
+/* Links within the navigations container */
+.nav-link {
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  color: darkblue;
+  padding: 5px 10px;
+  gap: 15px;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+.nav-link:hover .mozilla-headline {
+  color: #4a9eff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 30px;
+}
+
+/* Icon styles within the links */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px;
+  flex-shrink: 0;
+}
+
+.logo-text .mozilla-headline {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4a9eff;
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 2px;
+  font-family: "Mozilla Headline", sans-serif;
 }
 
 header {
@@ -63,4 +227,84 @@ div.buttons a:hover {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-basis: auto;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 999px) {
+  /* Navigation bar and container for mobile */
+  .nav-bar .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  /* Logo container for mobile */
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+    flex-shrink: 0;
+  }
+
+  .logo-text .mozilla-headline {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a9eff;
+    margin: 0;
+  }
+
+  .logo-subtitle {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 2px;
+    font-family: "Mozilla Headline", sans-serif;
+  }
+
+  /* Navigation links container for mobile */
+  .nav-bar .nav-container .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    order: 2; /* Links come after the logo on mobile */
+    flex-wrap: wrap;
+  }
+
+  /* Link styles for mobile */
+  .nav-bar .nav-container .nav-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    padding: 8px 12px;
+    margin: 2px;
+    gap: 4px;
+  }
+
+  .nav-link a {
+    font-family: "Mozilla Headline", sans-serif;
+    font-weight: 400;
+  }
 }

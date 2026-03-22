@@ -101,6 +101,58 @@
   font-size: 25px;
 }
 
+.skills-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-skills-card {
+  perspective: 600px;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: #4a9eff solid 1px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.individual-skills-icon {
+  width: 100px;
+  height: auto;
+}
+
+#java-icon {
+  width: 75px;
+  height: auto;
+}
+
+#access-icon {
+  width: 100px;
+  height: auto;
+}
+
+#netbean-icon {
+  width: 100px;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .resume-container {
     flex-direction: column;
