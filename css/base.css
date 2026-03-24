@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* BACKGROUND */
@@ -80,7 +81,7 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
-#anta-regular-header {
+.anta-regular-header {
   font-family: "Anta", sans-serif;
   font-weight: 700;
   font-style: normal;
