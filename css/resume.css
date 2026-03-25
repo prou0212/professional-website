@@ -93,7 +93,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 35px;
 }
 
 #web-development-titles,
@@ -163,15 +163,15 @@
   transform: translate(80%, 25%);
 }
 
-#access-icon {
+img#access-icon {
   width: 100px;
   height: auto;
 }
 
-#netbean-icon {
-  width: 100px;
+#netbeans-icon {
+  width: 90px;
   height: auto;
-  transform: translate(-50%, -50%);
+  transform: translate(60%, 25%);
 }
 
 @media screen and (max-width: 768px) {
