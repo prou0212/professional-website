@@ -43,30 +43,6 @@
   text-decoration: none;
 }
 
-#resume-link {
-  display: block;
-  width: fit-content;
-  margin: 0 auto 60px auto;
-  padding: 20px 30px;
-  text-decoration: none;
-  background-color: black;
-  border: 1px solid #4a9eff;
-  border-radius: 10px;
-  text-align: center;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-
-#resume-link:visited {
-  color: white;
-}
-
-#resume-link:hover {
-  background-color: #4a9eff;
-  color: black;
-}
-
 #individual-resume-traits {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0 20px 0;
