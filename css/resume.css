@@ -67,21 +67,18 @@
   color: black;
 }
 
-#skills-container {
+#individual-resume-traits {
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 20px 0;
 }
 
-#skills-header {
-  margin: 10px;
-}
-
-#skills-title {
+.section-title {
   margin: 30px;
   text-align: center;
   font-size: 50px;
 }
 
-#skills-description {
+.section-description {
   display: block;
   margin: 30px;
   text-align: center;
@@ -96,6 +93,43 @@
   gap: 35px;
 }
 
+.education-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.school-program-container {
+  min-height: 200px;
+  width: 800px;
+  margin: 40px;
+  padding: 0 20px;
+  /* box-shadow: 5px 5px 20px 0 rgba(74, 158, 255, 0.5); */
+  border: rgba(74, 158, 255, 0.3) solid 1px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.program-header {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.education-year {
+  margin: 15px;
+  padding: 10px;
+  border: rgba(74, 158, 255, 0.3) solid 1px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #011b39;
+  border-radius: 10px;
+  color: #4a9eff;
+}
+
 #web-development-titles,
 #programming-language-titles,
 #framework-titles,
@@ -105,7 +139,7 @@
 #os-networking-titles,
 #soft-professional-skills {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding: 20px;
 }
 
@@ -144,8 +178,8 @@
   width: 100%;
   position: absolute;
   backface-visibility: hidden;
-  transform: rotateY(180deg) translateY(-20%);
-  font-size: 30px;
+  transform: rotateY(180deg) translateY(-15%);
+  font-size: 20px;
   text-align: center;
   overflow-wrap: break-word;
   word-break: break-word;
