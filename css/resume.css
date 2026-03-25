@@ -33,6 +33,7 @@
   font-size: 20px;
   text-align: center;
 }
+
 .personal-details-image img {
   height: 20px;
   width: 20px;
@@ -66,23 +67,12 @@
   color: black;
 }
 
-.resume-picture-container {
-  display: flex;
-  margin: 50px;
-  justify-content: center;
-}
-
-.resume-picture-container img {
-  box-shadow: 15px 15px 40px 0 rgba(74, 158, 255, 0.5);
-}
-
 #skills-container {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 #skills-header {
   margin: 10px;
-  /* padding: 100px; */
 }
 
 #skills-title {
@@ -102,6 +92,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 #web-development-titles,
@@ -113,7 +105,7 @@
 #os-networking-titles,
 #soft-professional-skills {
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
   padding: 20px;
 }
 
@@ -121,11 +113,12 @@
   perspective: 600px;
   width: 200px;
   height: 150px;
-  border-radius: 10px;
-  border: #4a9eff solid 1px;
+  border-radius: 30px;
+  border: #4a9eff solid 3px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s ease;
+  box-shadow: 5px 5px 20px 0 rgba(74, 158, 255, 0.5);
 }
 
 .individual-skills-card:hover {
@@ -144,11 +137,18 @@
 }
 
 .card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   position: absolute;
   backface-visibility: hidden;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateY(-20%);
+  font-size: 30px;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .individual-skills-icon {
@@ -171,6 +171,7 @@
 #netbean-icon {
   width: 100px;
   height: auto;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 768px) {

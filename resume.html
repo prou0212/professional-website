@@ -563,19 +563,13 @@
     const cards = document.querySelectorAll(".individual-skills-card");
 
     for (let i = 0; i < cards.length; i++) {
-      let logo = cards[i].querySelector("img");
-      let logoText = cards[i].querySelector("h3");
+      cards[i].addEventListener("mouseenter", function () {
+        cards[i].classList.add("flipped");
+      });
+
+      cards[i].addEventListener("mouseleave", function () {
+        cards[i].classList.remove("flipped");
+      });
     }
-
-    logo.classList.add("card-front");
-    logoText.classList.add("card-back");
-
-    cards[i].addEventListener("mouseenter", function () {
-      cards[i].classList.add("flipped");
-    });
-
-    cards[i].addEventListener("mouseleave", function () {
-      cards[i].classList.remove("flipped");
-    });
   </script>
 </html>
