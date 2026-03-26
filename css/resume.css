@@ -69,7 +69,8 @@
   gap: 35px;
 }
 
-.education-row {
+#education-row,
+#work-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,8 +78,9 @@
   gap: 35px;
 }
 
-.school-program-container {
-  min-height: 200px;
+.school-program-container,
+.work-container {
+  min-height: 230px;
   width: 800px;
   margin: 40px;
   padding: 0 20px;
@@ -88,13 +90,17 @@
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+#skills-container {
+  padding-bottom: 60px;
+}
+
 .program-header {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
 }
 
-.education-year {
+.year {
   margin: 15px;
   padding: 10px;
   border: rgba(74, 158, 255, 0.3) solid 1px;
@@ -184,6 +190,68 @@ img#access-icon {
   transform: translate(60%, 25%);
 }
 
+#certificate-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.individual-certificate-container {
+  padding: 30px;
+}
+
+.certificate-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 400px;
+  max-height: 1000px;
+  border: 1px #4a9eff solid;
+  border-radius: 10px;
+  border: rgba(74, 158, 255, 0.3) solid 1px;
+  transition:
+    border-color 1.5s ease,
+    transform 1.5s ease;
+}
+
+.certificate-container:hover {
+  border-color: #4a9eff;
+  transform: translateY(-20px) scale(1);
+}
+
+.certificate-pics {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: top center;
+}
+
+.certificate-1 {
+  background-image: url("../pictures/resume/certificates/CertificateOfCompletion_Agile\ Software_Development_Clean_Coding_Practices.png");
+}
+
+.certificate-2 {
+  background-image: url("../pictures/resume/certificates/CertificateOfCompletion_Software_Architecture_Patterns_for_Developers_2020.png");
+}
+
+.certificate-3 {
+  background-image: url("../pictures/resume/certificates/CertificateOfCompletion_Software_Testing_Foundations_Testing_throughout_the_SDLC.png");
+}
+
+.certificate-heading {
+  text-align: center;
+}
+
+.certificate-description {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
 @media screen and (max-width: 768px) {
   .resume-container {
     flex-direction: column;
