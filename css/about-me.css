@@ -1,6 +1,7 @@
 #about-me-section-background {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
+  padding: 70px;
 }
 
 #sub-title-about-me {
@@ -18,7 +19,8 @@
   align-items: center;
 }
 
-#early-life {
+#early-life,
+#radio-broadcasting {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -26,28 +28,19 @@
   align-items: center;
   gap: 80px;
   margin: 10px 30px;
-  padding: 70px 30px;
-}
-
-#early-life::after {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #4a9eff;
-  left: 5%;
-  width: 90%;
-  bottom: 0;
-}
-
-.text-section {
   border: rgba(74, 158, 255, 0.3) solid 1px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  width: 75%;
   padding: 20px 40px;
+}
+
+.text-section {
+  width: 75%;
 }
 
 .about-me-heading {
   font-size: 35px;
+  margin-top: 0;
 }
 
 .about-me-description {

@@ -247,6 +247,11 @@ footer {
   align-items: center;
 }
 
+#top-heading-projects {
+  margin: 20px;
+  padding: 70px;
+}
+
 @media screen and (max-width: 999px) {
   /* Navigation bar and container for mobile */
   .nav-bar .nav-container {
